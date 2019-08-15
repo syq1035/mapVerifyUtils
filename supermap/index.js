@@ -1,11 +1,3 @@
-// var map = L.map('map').setView([30.6506221395211790, 114.3123096125275300], 13);
-// var baseLayer = L.tileLayer(
-//   'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
-//     attribution: 'Map data &copy; <a href=" ">OpenStreetMap</a > contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a >, Imagery © <a href="http://cloudmade.com">CloudMade</a >',
-//     maxZoom: 18
-//   }
-// );
-// baseLayer.addTo(map)
 var layers;
 var url="http://support.supermap.com.cn:8090/iserver/services/map-china400/rest/maps/China";
 var map = L.map('map', {
@@ -126,3 +118,36 @@ function formatStr (str) {
   })
   return statesData
 }
+
+/*
+//data格式
+[
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": Point,
+      "coordinates": [30.6506221395211790,114.3123096125275300]
+    }, 
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": LineString,
+      "coordinates": [[-100, 40], [-105, 45], [-110, 55]]
+    }, 
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": Polygon,
+      "coordinates": [[
+        [-104.05, 48.99],
+        [-97.22,  48.98],
+        [-96.58,  45.94],
+        [-104.03, 45.94],
+        [-104.05, 48.99]
+      ]]
+    }, 
+  }
+]
+*/

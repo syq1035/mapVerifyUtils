@@ -114,3 +114,36 @@ function formatStr (str) {
   })
   return statesData
 }
+
+/*
+//data格式
+[
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": Point,
+      "coordinates": [30.6506221395211790,114.3123096125275300]
+    }, 
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": LineString,
+      "coordinates": [[-100, 40], [-105, 45], [-110, 55]]
+    }, 
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": Polygon,
+      "coordinates": [[
+        [-104.05, 48.99],
+        [-97.22,  48.98],
+        [-96.58,  45.94],
+        [-104.03, 45.94],
+        [-104.05, 48.99]
+      ]]
+    }, 
+  }
+]
+*/
